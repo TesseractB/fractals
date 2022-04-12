@@ -1,66 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Sierpinski Triangle</title>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="stylesheet" href="style.css" />
-        <!-- JQuery -->
-        <script
-            src="https://code.jquery.com/jquery-3.6.0.min.js"
-            integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-            crossorigin="anonymous"
-        ></script>
-        <!-- BootStrap -->
-        <link
-            rel="stylesheet"
-            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-            crossorigin="anonymous"
-        />
-        <script
-            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"
-        ></script>
-        <!-- FontAwesome -->
-        <script
-            src="https://kit.fontawesome.com/c60bbed0a2.js"
-            crossorigin="anonymous"
-        ></script>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Tesseract's Fractals</title>
+
+        <!--BootStrap & JQuery -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <!--FontAwesome-->
+        <script src="https://kit.fontawesome.com/c60bbed0a2.js" crossorigin="anonymous"></script>
+
     </head>
     <body>
         <div class="container">
-            <noscript>
-                <div class="alert alert-danger" role="alert">
-                    <h4 class="alert-heading">Warning!</h4>
-                    <p>You need to enable JavaScript to run this app.</p>
-                </div>
-            </noscript>
-            <h1>Behold!</h1>
-            <p>The making of a Sierpinski Triangle using the "chaos game"</p>
-            <p>The rules of the game are simple:</p>
-            <ol>
-                <li>Draw the 3 corners of an equilateral triangle</li>
-                <li>
-                    Pick a random point inside the triangle. This will be known
-                    as your current position
-                </li>
-                <li>
-                    Draw a point halfway between your current position and one
-                    of the first 3 points, picked at random.
-                </li>
-            </ol>
-            <canvas id="canvas" width="700" height="700"></canvas>
-            <script>
-                var triangleOn = true;
-            </script>
-            <script src="canvas.js" async></script>
-            <br />
-            <small
-                >am i using the default bootstrap theme? yes. is it because i'm
-                lazy? also yes.</small
-            >
+            <h1>Welcome!</h1>
+            <p>This is a collection of fractals</p>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Fractal</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="./sierpinski/index.html">Sierpinski</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <small>i'll get to making this look nice... eventually</small>
         </div>
     </body>
 </html>

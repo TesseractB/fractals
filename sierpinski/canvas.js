@@ -9,6 +9,8 @@ function drawPoint(coordinates, diameter) {
 drawPoint([350,0])
 drawPoint([0,699])
 drawPoint([700,699])
+//this changes transparent pixels to white
+
 
 if (mode === "dev") {
     ctx.moveTo(350,0)
